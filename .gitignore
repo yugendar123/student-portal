@@ -1,26 +1,33 @@
 
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
 
-# Virtual environments
+# Virtual environment
+yuvi/
 venv/
 .venv/
 env/
+
+
+
 
 # Environment variables
 .env
 .env.*
 !.env.example
 
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
 # IDE
 .vscode/
 .idea/
 
-# Logs
+# Logs and testing
 *.log
-
-# Testing
 .pytest_cache/
 .coverage
 
@@ -32,8 +39,12 @@ dist/
 .DS_Store
 Thumbs.db
 
-
-# SQLite database files
+yuvi/
+venv/
+.venv/
+__pycache__/
+*.pyc
 *.db
 *.sqlite
 *.sqlite3
+.env
