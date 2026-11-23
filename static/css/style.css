@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* FULL PAGE BACKGROUND */
 html {
     min-height: 100%;
     background: linear-gradient(135deg, #1349b7, #5424a8, #a809c0);
@@ -27,15 +26,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-/* HEADER */
 header {
     width: 100%;
     background: transparent;
     box-shadow: none;
 }
 
-/* NAVIGATION */
 nav {
     max-width: 1200px;
     margin: auto;
@@ -70,7 +66,6 @@ nav h2 {
     color: #ffd6ff;
 }
 
-/* MAIN */
 main {
     width: 100%;
     min-height: calc(100vh - 75px);
@@ -82,7 +77,6 @@ main {
     padding: 40px 20px;
 }
 
-/* HERO */
 .hero {
     width: 100%;
     max-width: 1100px;
@@ -95,7 +89,6 @@ main {
     margin: auto;
 }
 
-/* WELCOME TAG */
 .welcome-tag {
     display: inline-block;
     padding: 9px 20px;
@@ -109,7 +102,6 @@ main {
     margin-bottom: 25px;
 }
 
-/* HEADING */
 .hero h1 {
     font-size: 52px;
     font-weight: 800;
@@ -122,7 +114,6 @@ main {
     color: #ffd6ff;
 }
 
-/* PARAGRAPH */
 .hero p {
     max-width: 650px;
     margin: auto;
@@ -132,7 +123,6 @@ main {
     line-height: 1.8;
 }
 
-/* BUTTONS */
 .hero-buttons {
     margin-top: 35px;
 
@@ -175,7 +165,6 @@ main {
     color: #5424a8;
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
