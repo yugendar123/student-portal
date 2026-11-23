@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal - Home</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+
+<body class="bg">
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h2>Student Portal</h2>
+
+            <div class="nav-links">
+                <a href="/">Home</a>
+
+                {% if user %}
+                    <a href="/dashboard">Dashboard</a>
+
+                    {% if user.role == "admin" %}
+                        <a href="/admin">Admin</a>
+                    {% endif %}
+
+                    <a href="/log-out">Logout</a>
+                {% else %}
+                    <a href="/register">Register</a>
+                    <a href="/login">Login</a>
+                {% endif %}
+            </div>  
+
+
+            
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="hero">
+
+            <div class="hero-content">
+                <span class="welcome-tag">WELCOME TO STUDENT PORTAL</span>
+
+                <h1>
+                    Build Your Future<br>
+                    <span>With Better Learning</span>
+                </h1>
+
+                <p>
+                    Your learning journey starts here.
+                    Access your student account, manage your academic
+                    profile and take control of your educational journey.
+                </p>
+
+                <div class="hero-buttons">
+
+                    {% if user %}
+                        <a href="/dashboard" class="btn">
+                            Go to Dashboard
+                        </a>
+                    {% else %}
+                        <a href="/register" class="btn">
+                            Get Started
+                        </a>
+
+                        <a href="/login" class="btn btn-secondary">
+                            Login
+                        </a>
+                    {% endif %}
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

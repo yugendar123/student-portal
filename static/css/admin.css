@@ -1,0 +1,82 @@
+
+body {
+    font-family: "Maven Pro", sans-serif;
+}
+
+.student-section {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+.role-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.role-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-btn {
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background: #21618c;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.self-label {
+    color: #888;
+    font-size: 13px;
+}
+
+.empty {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+}

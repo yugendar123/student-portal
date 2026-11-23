@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+.navbar {
+    height: 65px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #263b59;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #263b59;
+    padding: 9px 18px;
+    border-radius: 4px;
+}
+
+
+.main-layout {
+    display: flex;
+    min-height: calc(100vh - 125px);
+}
+
+
+.sidebar {
+    width: 230px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 25px 15px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 13px 12px;
+    margin-bottom: 5px;
+    color: #444;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #e8eef7;
+    color: #263b59;
+}
+
+
+.content {
+    flex: 1;
+    padding: 35px;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+.welcome-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.welcome-section h2 {
+    margin-bottom: 12px;
+    color: #263b59;
+}
+
+.welcome-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Sections */
+
+.section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    width: 30%;
+    background-color: #f8f8f8;
+}
+
+
+.section p {
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 18px;
+    color: #777;
+}
+
+
+@media (max-width: 700px) {
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
